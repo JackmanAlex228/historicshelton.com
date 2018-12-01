@@ -1,0 +1,752 @@
+﻿<html>
+
+<head>
+	<title>The Shelton Inn</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" type="text/css" href="TheSheltonInn.css">
+</head>
+
+<body>
+
+	<!-- Links for top menu -->
+	<div class="w3-top">
+		<div class="w3-row w3-padding w3-black">
+
+			<!-- HOME button -->
+			<div class="w3-col top-btn-width">
+				<a href="#" class="w3-button w3-block w3-black">HOME</a>
+			</div>
+
+			<!-- EVENTS button -->
+			<div class="w3-col top-btn-width">
+				<a href="#events" class="w3-button w3-block w3-black">EVENTS</a>
+			</div>
+
+			<!-- ROOMS button -->
+			<div class="w3-col top-btn-width">
+				<a href="#rooms" class="w3-button w3-block w3-black">ROOMS</a>
+			</div>
+
+			<!-- ABOUT button -->
+			<div class="w3-col top-btn-width">
+				<a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+			</div>
+
+			<!-- CONTACT button -->
+			<div class="w3-col top-btn-width">
+				<a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Header with image -->
+	<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+		<div class="w3-display-middle w3-center">
+			<span class="w3-text-white" style="font-size:90px">The Historic<br>Shelton</span>
+		</div>
+		<div class="w3-display-bottomleft w3-center w3-padding-large">
+			<span class="w3-text-white">13576 N 105 E, Idaho Falls</span>
+		</div>
+	</header>
+
+	<!-- Background color and large text to the whole page -->
+	<div class="w3-send se-grayscale w3-large">
+
+		<!-- Events Container -->
+		<div class="w3-container" id="events">
+			<div class="w3-content" style="max-width:700px">
+				<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">EVENTS AT THE SHELTON</span></h5>
+
+				<!--Paragraph about shelton events (what we host, how to plan event, etc.)-->
+				<p>We host a variety of events such as birthday parties, movie nights, lunchens, and more.</p>
+				<p>To recieve updates and notifications about upcoming events and announcements at the Shelton, follow us on <a
+					 href="https://twitter.com/Shelton_Idaho" target="_blank">Twitter</a> and <a href="https://www.facebook.com/The-Historic-Shelton-Idaho-710331035830130/"
+					 target="_blank">Facebook.</a></p>
+				<p><strong>To plan an event with us, </strong>contact us with the information <a href="#contact">here!</a></p>
+
+				<!--Events image-->
+				<img src="images/events.jpg" style="width:100%;max-width:1000px;padding-bottom:2cm" class="w3-margin-top">
+			</div>
+		</div>
+
+		<!-- Rooms Container -->
+		<div class="w3-container" id="rooms">
+
+			<!-- Rooms tabs box-->
+			<div class="w3-content" style="max-width:700px">
+
+				<!-- ROOMS -->
+				<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ROOMS</span></h5>
+
+				<!-- room tab buttons -->
+				<div class="w3-row w3-center w3-card w3-padding">
+
+					<!--Willow Creek tab function-->
+					<a href="javascript:void(0)" onclick="openRoom(event, 'Willow Creek');" id="myLink">
+						<div class="w3-col room-btn-width tablink">Willow Creek</div>
+					</a>
+
+					<!--Eagle Rock tab function-->
+					<a href="javascript:void(0)" onclick="openRoom(event, 'Eagle Rock');">
+						<div class="w3-col room-btn-width tablink">Eagle Rock</div>
+					</a>
+
+					<!--Prospect tab function-->
+					<a href="javascript:void(0)" onclick="openRoom(event, 'Prospect');">
+						<div class="w3-col room-btn-width tablink">Prospect</div>
+					</a>
+				</div>
+
+				<!-- Willow Creek tab -->
+				<div id="Willow Creek" class="w3-container rooms w3-padding-48 w3-card">
+
+					<!-- Willow Creek information-->
+					<p>Named after the area where the Shelton is located, the Willow Creek has one queen size bed, one private
+						bathroom, a closet, and is good for two guests. Other amenities include
+						<ul>
+							<li>TV with Blu Ray and Roku streaming</li>
+							<li>Towels, shampoo, body wash, and hand soap</li>
+							<li>Jetted bath tub</li>
+							<li>Heating plus a fireplace space heater</li>
+						</ul>
+					</p>
+
+					<!-- slideshow container for Willow Creek-->
+					<!-- w1-w13 -->
+					<div class="slideshow-container">
+
+						<!-- Willow Creek Image 1-->
+						<div class="mySlides fade">
+							<div class="numbertext">1 / 13</div>
+							<img src="images/rooms/w1.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- Willow Creek Image 2-->
+						<div class="mySlides fade">
+							<div class="numbertext">2 / 13</div>
+							<img src="images/rooms/w2.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- Willow Creek Image 3-->
+						<div class="mySlides fade">
+							<div class="numbertext">3 / 13</div>
+							<img src="images/rooms/w3.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- Willow Creek Image 4-->
+						<div class="mySlides fade">
+							<div class="numbertext">4 / 13</div>
+							<img src="images/rooms/w4.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- Willow Creek Image 5-->
+						<div class="mySlides fade">
+							<div class="numbertext">5 / 13</div>
+							<img src="images/rooms/w5.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- Willow Creek Image 6-->
+						<div class="mySlides fade">
+							<div class="numbertext">6 / 13</div>
+							<img src="images/rooms/w6.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- Willow Creek Image 7-->
+						<div class="mySlides fade">
+							<div class="numbertext">7 / 13</div>
+							<img src="images/rooms/w7.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- Willow Creek Image 8-->
+						<div class="mySlides fade">
+							<div class="numbertext">8 / 13</div>
+							<img src="images/rooms/w8.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- Willow Creek Image 9-->
+						<div class="mySlides fade">
+							<div class="numbertext">9 / 13</div>
+							<img src="images/rooms/w9.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- Willow Creek Image 10-->
+						<div class="mySlides fade">
+							<div class="numbertext">10 / 13</div>
+							<img src="images/rooms/w10.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- Willow Creek Image 11-->
+						<div class="mySlides fade">
+							<div class="numbertext">11 / 13</div>
+							<img src="images/rooms/w11.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- Willow Creek Image 12-->
+						<div class="mySlides fade">
+							<div class="numbertext">12 / 13</div>
+							<img src="images/rooms/w12.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- Willow Creek Image 13-->
+						<div class="mySlides fade">
+							<div class="numbertext">13 / 13</div>
+							<img src="images/rooms/w13.jpg" style="width:100%">
+							<!--<div class="text">Caption Text</div>-->
+						</div>
+
+						<!-- next and previous buttons-->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div>
+					<br>
+
+					<!-- progress dots -->
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						<span class="dot" onclick="currentSlide(5)"></span>
+						<span class="dot" onclick="currentSlide(6)"></span>
+						<span class="dot" onclick="currentSlide(7)"></span>
+						<span class="dot" onclick="currentSlide(8)"></span>
+						<span class="dot" onclick="currentSlide(9)"></span>
+						<span class="dot" onclick="currentSlide(10)"></span>
+						<span class="dot" onclick="currentSlide(11)"></span>
+						<span class="dot" onclick="currentSlide(12)"></span>
+						<span class="dot" onclick="currentSlide(13)"></span>
+					</div>
+
+					<!-- booking Willow Creek button -->
+					<form method="get" target="_blank" action="https://www.airbnb.com/rooms/20065177">
+						<p><button class="w3-button w3-black" type="submit">BOOK THIS ROOM ON AIRBNB</button></p>
+					</form>
+				</div>
+
+				<!-- Eagle Rock tab -->
+				<!-- e1-e18 -->
+				<div id="Eagle Rock" class="w3-container rooms w3-padding-48 w3-card">
+
+					<!-- Eagle Rock information-->
+					<p>Named after the original name of Idaho Falls, the Eagle Rock suite is comprised of two rooms connected with a
+						private bathroom. Each room has one queen sized bed, a closet, and the whole suite itself is good for four
+						guests. Other amenities include</p>
+					<ul>
+						<li>TV with Blu Ray and streaming (one in each room)</li>
+						<li>Towels, shampoo, body wash, and hand soap</li>
+						<li>Jetted bath tub</li>
+						<li>Heating plus a remote controlled cieling fan in east room</li>
+					</ul>
+
+					<!-- slideshow container for Eagle Rock-->
+					<div class="slideshow-containerE">
+
+						<!-- Eagle rock image 1-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">1 / 16</div>
+							<img src="images/rooms/e1.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 2-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">2 / 16</div>
+							<img src="images/rooms/e2.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 3-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">3 / 16</div>
+							<img src="images/rooms/e3.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 4-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">4 / 16</div>
+							<img src="images/rooms/e4.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 5-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">5 / 16</div>
+							<img src="images/rooms/e5.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 6-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">6 / 16</div>
+							<img src="images/rooms/e6.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 7-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">7 / 16</div>
+							<img src="images/rooms/e7.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 8-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">8 / 16</div>
+							<img src="images/rooms/e8.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 9-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">9 / 16</div>
+							<img src="images/rooms/e9.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 10-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">10 / 16</div>
+							<img src="images/rooms/e10.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 11-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">11 / 16</div>
+							<img src="images/rooms/e11.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 12-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">12 / 16</div>
+							<img src="images/rooms/e12.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 13-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">13 / 16</div>
+							<img src="images/rooms/e13.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 14-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">14 / 16</div>
+							<img src="images/rooms/e14.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 15-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">15 / 16</div>
+							<img src="images/rooms/e15.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- Eagle rock image 16-->
+						<div class="mySlidesE fadeE">
+							<div class="numbertextE">16 / 16</div>
+							<img src="images/rooms/e16.jpg" style="width:100%">
+							<!--<div class="textE">Caption Text</div>-->
+						</div>
+
+						<!-- sext and previous buttons-->
+						<a class="prevE" onclick="plusSlidesE(-1)">&#10094;</a>
+						<a class="nextE" onclick="plusSlidesE(1)">&#10095;</a>
+
+					</div>
+					<br>
+
+					<!-- progress dots -->
+					<div style="text-align:center">
+						<span class="dotE" onclick="currentSlideE(1)"></span>
+						<span class="dotE" onclick="currentSlideE(2)"></span>
+						<span class="dotE" onclick="currentSlideE(3)"></span>
+						<span class="dotE" onclick="currentSlideE(4)"></span>
+						<span class="dotE" onclick="currentSlideE(5)"></span>
+						<span class="dotE" onclick="currentSlideE(6)"></span>
+						<span class="dotE" onclick="currentSlideE(7)"></span>
+						<span class="dotE" onclick="currentSlideE(8)"></span>
+						<span class="dotE" onclick="currentSlideE(9)"></span>
+						<span class="dotE" onclick="currentSlideE(10)"></span>
+						<span class="dotE" onclick="currentSlideE(11)"></span>
+						<span class="dotE" onclick="currentSlideE(12)"></span>
+						<span class="dotE" onclick="currentSlideE(13)"></span>
+						<span class="dotE" onclick="currentSlideE(14)"></span>
+						<span class="dotE" onclick="currentSlideE(15)"></span>
+						<span class="dotE" onclick="currentSlideE(16)"></span>
+					</div>
+
+					<!-- booking Eagle Rock button -->
+					<form method="get" target="_blank" action="https://www.airbnb.com/rooms/20121212">
+						<p><button class="w3-button w3-black" type="submit">BOOK THIS ROOM ON AIRBNB</button></p>
+					</form>
+				</div>
+
+				<!-- Prospect tab -->
+				<!-- p1-p8 -->
+				<div id="Prospect" class="w3-container rooms w3-padding-48 w3-card">
+
+					<!-- Prospect information-->
+					<p>Named after a town that existed about 300 yards to the south of the Shelton, the Prospect has one queen sized
+						bed, one private bathroom, a closet, and is good for two guests. Other amenities include</p>
+					<ul>
+						<li>TV with Blu Ray and streaming</li>
+						<li>Towels, shampoo, body wash, and hand soap</li>
+						<li>Jetted bath tub</li>
+						<li>Heating plus a fireplace space heater</li>
+					</ul>
+					<!-- Slideshow container for Prospect-->
+					<div class="slideshow-containerP">
+
+						<!-- Prospect image 1 -->
+						<div class="mySlidesP fadeP">
+							<div class="numbertextP">1 / 8</div>
+							<img src="images/rooms/p1.jpg" style="width:100%">
+							<!--<div class="textP">Caption Text</div>-->
+						</div>
+
+						<!-- Prospect image 2 -->
+						<div class="mySlidesP fadeP">
+							<div class="numbertextP">2 / 8</div>
+							<img src="images/rooms/p2.jpg" style="width:100%">
+							<!--<div class="textP">Caption Text</div>-->
+						</div>
+
+						<!-- Prospect image 3 -->
+						<div class="mySlidesP fadeP">
+							<div class="numbertextP">3 / 8</div>
+							<img src="images/rooms/p3.jpg" style="width:100%">
+							<!--<div class="textP">Caption Text</div>-->
+						</div>
+
+						<!-- Prospect image 4 -->
+						<div class="mySlidesP fadeP">
+							<div class="numbertextP">4 / 8</div>
+							<img src="images/rooms/p4.jpg" style="width:100%">
+							<!--<div class="textP">Caption Text</div>-->
+						</div>
+
+						<!-- Prospect image 5 -->
+						<div class="mySlidesP fadeP">
+							<div class="numbertextP">5 / 8</div>
+							<img src="images/rooms/p5.jpg" style="width:100%">
+							<!--<div class="textP">Caption Text</div>-->
+						</div>
+
+						<!-- Prospect image 6 -->
+						<div class="mySlidesP fadeP">
+							<div class="numbertextP">6 / 8</div>
+							<img src="images/rooms/p6.jpg" style="width:100%">
+							<!--<div class="textP">Caption Text</div>-->
+						</div>
+
+						<!-- Prospect image 7 -->
+						<div class="mySlidesP fadeP">
+							<div class="numbertextP">7 / 8</div>
+							<img src="images/rooms/p7.jpg" style="width:100%">
+							<!--<div class="textP">Caption Text</div>-->
+						</div>
+
+						<!-- Prospect image 8 -->
+						<div class="mySlidesP fadeP">
+							<div class="numbertextP">8 / 8</div>
+							<img src="images/rooms/p8.jpg" style="width:100%">
+							<!--<div class="textP">Caption Text</div>-->
+						</div>
+
+						<!-- next and previous buttons -->
+						<a class="prevP" onclick="plusSlidesP(-1)">&#10094;</a>
+						<a class="nextP" onclick="plusSlidesP(1)">&#10095;</a>
+
+					</div>
+					<br>
+
+					<!-- progress dots -->
+					<div style="text-align:center">
+						<span class="dotP" onclick="currentSlideP(1)"></span>
+						<span class="dotP" onclick="currentSlideP(2)"></span>
+						<span class="dotP" onclick="currentSlideP(3)"></span>
+						<span class="dotP" onclick="currentSlideP(4)"></span>
+						<span class="dotP" onclick="currentSlideP(5)"></span>
+						<span class="dotP" onclick="currentSlideP(6)"></span>
+						<span class="dotP" onclick="currentSlideP(7)"></span>
+						<span class="dotP" onclick="currentSlideP(8)"></span>
+					</div>
+
+					<!-- booking Prospect button -->
+					<form method="get" target="_blank" action="https://www.airbnb.com/rooms/20138537">
+						<p><button class="w3-button w3-black" type="submit">BOOK THIS ROOM ON AIRBNB</button></p>
+					</form>
+				</div>
+
+				<!-- Decorative image 2 -->
+				<img src="images/window.jpg" style="width:100%;max-width:1000px;padding-top:2cm;padding-bottom:2cm;">
+
+			</div>
+		</div>
+
+		<!-- About Container -->
+		<div class="w3-container" id="about">
+			<div class="w3-content" style="max-width:700px">
+
+				<!-- ABOUT -->
+				<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ABOUT</span></h5>
+
+				<!--History-->
+				<p><strong>
+						<center>History
+					</strong></center>
+				</p>
+				<img src="images/history1.jpg" style="width:100%;max-height:1000px;">
+				<div class="history">
+					<p>Born in Birmingham, England in 1854, John Shelton Howard was the seventh child out of eleven. John’s family
+						were early converts to the LDS Church.
+						After suffering persecution in their home land, John and his family immigrated to the United States in June 1864
+						to join the main body of the church in Utah.</p>
+
+					<p>John married Josephine Johnson in 1878 and supported his new wife by working as a farmer and carpenter. As was
+						the custom among some church members,
+						he also took a second wife, Sarah Ann Downs, in 1884. In 1890, federal law banned plural marraige, making John a
+						law breaker and subject to arrest.</p>
+
+					<p>At the urgent request of Josephine whom he did not have children with he took Sarah and their two sons from
+						Utah in 1889, he went by "John Shelton" rather than
+						John Howard because Idaho bounty hunters were looking to arrest polygamists; if "unlawfil cohabitation" could be
+						proven, the law sent a man to prison in Boise. </p>
+
+					<p>After arriving at Willow Creek, fifteen miles northeast of Eagle Rock (now Idaho Falls), John Shelton purchased
+						sixty acres from a local farmer and restarted his life.
+						After various hardships since the first winter in Idaho, from caring for sick neighbors, to preparing the dead
+						for burial by using his skills as a carpender to make caskets
+						out of whatever lumber he could scavenge, compassion came naturally to John and his wife Sarah. They rendered the
+						same service to the community during the flu epidemic in 1918
+						and at other times throughout their lives. Sarah eventually was made a midwife and in over 300 births, never lost
+						a mother.</p>
+
+					<p>By 1892, there were enough church members in the area to create a regular LDS ward, and "John Shelton" was
+						asked to serve as Bishop. It was to be named the Shelton ward in his honor.
+						At that time he decided to come clean and began to use his actual sir-name, Howard, but the name Shelton stuck to
+						the Church and the community. John S. Howard was Bishop for 26 years,
+						much loved and made many friends all over the valley. John traveled to many communities to help build bridges,
+						homes, and churches. </p>
+
+					<p>In 1909, the community decided that it was time for a new meeting house, which was completed in 1914.</p>
+
+					<p>John "Shelton" Howard died from a three-day illness in 1923. Many throughout the valley came to honor him.
+						Sarah lived fifteen more years and passed away in 1938. Josephine adopted a daughter and later remarried.</p>
+
+					<p>The meeting house was decommissioned in 1976 for a year before the new LDS building burned down. The church
+						used it for another year and then sold it in 1978,
+						where it became a saddle shop. After decades of changing ownership, and being renovated, the Shelton was listed
+						in the National Register of Historic Places in 2004
+						and also recognized by the daughters of the Utah pioneers. This old stone meeting house became what is known
+						today as the Historic Shelton.
+						Purchased and once again rennovated by Lesley and Ervin Hatch in the summer of 2016 to continue it’s use for the
+						community as a bed and breakfast and events venue.</p>
+				</div>
+
+				<p style="font-size: 12">More details about the history of John S. Howard and the Shelton meeting house,
+					as well as the history of Bonneville County, can be found in the book "Unsung Heroes and Settlers of Bonneville
+					County, Idaho" (p. 79-86) by Connie B. Otteson. ISBN: 0-9747376-8-2. This book can also be found in the second 
+					floor book shelf at the Historic Shelton Inn.</p>
+				<!--Places Nearby-->
+				<p>
+					<center><strong>Our most suggested places nearby</strong></center>
+				</p>
+				<table id="places">
+
+					<!--
+				Heise					Pizza				5136 E Heise Rd, Ririe
+				Los Albertos			Mexican				315 W Ririe Hwy, Ririe
+				Big Judds				Burgers				411 W 7800 S, Rexburg
+				Sweet Surrender 		Diner				339 Main St, Ririe
+				Caramel tree			Sweets				146 E Main St, Rigby
+				Fuji 					Japanese			2625 S 25th E, Idaho Falls
+				The Snakebite 			American bistro		401 Park Ave, Idaho Falls
+				
+				Museum of Idaho			Museum				200 N Eastern Ave, Idaho Falls
+				Legacy Flight Museum	Museum				400 Airport Rd, Rexburg
+				Potato Museum			Museum				130 NW Main St, Blackfoot
+				Museum of Clean			Museum				711 S 2nd Ave, Pocatello
+				
+				Yellowstone				National Park		30 Yellowstone Ave, West Yellowstone, MT
+				Bear World				Attraction			6010 S 4300 W, Rexburg
+				Idaho Falls Zoo			Attraction			2725 Carnival Way, Idaho Falls
+				
+				Heise Hot Springs		Attraction			5116 E Heise Rd, Ririe
+				Lava Hot Springs		Resorts				Lava Hot Springs
+				
+				BYU Idaho 				University			525 S Center St, Rexburg
+				-->
+
+					<p style="font-size: 12">Click or tap on the places below for more details.</p>
+
+					<!-- Los Albertos -->
+					<tr onclick="window.open('https://goo.gl/maps/3EoK7dZNDmr');">
+						<td>Los Albertos</td>
+						<td>Mexican</td>
+						<td>315 W Ririe Hwy, Ririe (3 miles)</td>
+					</tr>
+
+					<!-- Sweet Surrender -->
+					<tr onClick="window.open('https://goo.gl/maps/6HKGTnBgDoL2');">
+						<td>Sweet Surrender</td>
+						<td>Diner</td>
+						<td>339 Main St, Ririe (3 miles)</td>
+					</tr>
+
+					<!-- Caramel Tree -->
+					<tr onClick="window.open('https://goo.gl/maps/R89Gnencxou');">
+						<td>Caramel Tree</td>
+						<td>Desserts</td>
+						<td>146 E Main St, Rigby (8 miles)</td>
+					</tr>
+
+					<!-- Heise -->
+					<tr onClick="window.open('https://goo.gl/maps/3k7jrMHQBRL2');">
+						<td>Heise</td>
+						<td>Pizza</td>
+						<td>5136 E Heise Rd, Ririe (10 miles)</td>
+					</tr>
+
+					<!-- Big Jud's -->
+					<tr onclick="window.open('https://goo.gl/maps/ZRPtz9dabZ72');">
+						<td>Big Jud's</td>
+						<td>Burgers</td>
+						<td>411 W 7800 S, Rexburg (10 miles)</td>
+					</tr>
+
+					<!-- Fuji -->
+					<tr onclick="window.open('https://goo.gl/maps/LxGYMEfo4Zs');">
+						<td>Fuji</td>
+						<td>Japanese</td>
+						<td>2625 S 25th E, Idaho Falls (14 miles)</td>
+					</tr>
+
+					<!-- The Snakebite -->
+					<tr onClick="window.open('https://goo.gl/maps/Jvgh9p49z2y');">
+						<td>The Snakebite</td>
+						<td>American Bistro</td>
+						<td>401 Park Ave, Idaho Falls (14 miles)</td>
+					</tr>
+
+					<!-- Heise Hot Springs -->
+					<tr onClick="window.open('https://goo.gl/maps/AwFtfAestrA2');">
+						<td>Heise Hot Springs</td>
+						<td>Attraction</td>
+						<td>5116 E Heise Rd, Ririe (10 miles)</td>
+					</tr>
+
+					<!-- Museum of Idaho -->
+					<tr onClick="window.open('https://goo.gl/maps/o4TAy4TtJ2T2');">
+						<td>Museum of Idaho</td>
+						<td>Museum</td>
+						<td>200 N Eastern Ave, Idaho Falls (14 miles)</td>
+					</tr>
+
+					<!-- Idaho Falls Zoo -->
+					<tr onClick="window.open('https://goo.gl/maps/ZiSNxxXseHo');">
+						<td>Idaho Falls Zoo</td>
+						<td>Attraction</td>
+						<td>2725 Carnival Way, Idaho Falls (16 miles)</td>
+					</tr>
+
+					<!-- Bear World -->
+					<tr onclick="window.open('https://goo.gl/maps/QhHW1CyiCRA2');">
+						<td>Bear World</td>
+						<td>Attraction</td>
+						<td>6010 S 4300 W, Rexburg (20 miles)</td>
+					</tr>
+
+					<!-- BYU Idaho -->
+					<tr onClick="window.open('https://goo.gl/maps/MWzuS6Ek8F12');">
+						<td>BYU Idaho</td>
+						<td>University</td>
+						<td>525 S Center St, Rexburg (22 miles)</td>
+					</tr>
+
+					<!-- Legacy Flight Museum -->
+					<tr onClick="window.open('https://goo.gl/maps/vSLdVaK5fUy');">
+						<td>Legacy Flight Museum</td>
+						<td>Museum</td>
+						<td>400 Airport Rd, Rexburg (23 miles)</td>
+					</tr>
+
+					<!-- Potato Museum -->
+					<tr onClick="window.open('https://goo.gl/maps/fQ8EFWFGxQF2');">
+						<td>Potato Museum</td>
+						<td>Museum</td>
+						<td>130 NW Main St, Blackfoot (43 miles)</td>
+					</tr>
+
+					<!-- Museum of Clean -->
+					<tr onClick="window.open('https://goo.gl/maps/fCveEBCQpKG2');">
+						<td>Museum of Clean</td>
+						<td>Museum</td>
+						<td>711 S 2nd Ave, Pocatello (67 miles)</td>
+					</tr>
+
+					<!-- Lava Hot Springs -->
+					<tr onClick="window.open('https://goo.gl/maps/VUHQ3L7PSxq');">
+						<td>Lava Hot Springs</td>
+						<td>Resorts</td>
+						<td>Lava Hot Springs (100 miles)</td>
+					</tr>
+
+					<!-- Yellowstone -->
+					<tr onClick="window.open('https://goo.gl/maps/SrteHGt3XNv');">
+						<td>Yellowstone</td>
+						<td>National Park</td>
+						<td>30 Yellowstone Ave, West Yellowstone, MT (104 miles)</td>
+					</tr>
+
+				</table>
+
+			</div>
+		</div>
+
+		<!-- Contact Container -->
+		<div class="w3-container" id="contact">
+			<div class="w3-content" style="max-width:700px">
+
+				<!-- CONTACT -->
+				<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h5>
+
+				<!-- address, email, and phone-->
+				<p><strong>Find us at </strong><a target="_blank" href="https://goo.gl/maps/5GgpVhCCKpK2">13576 N 105 E, Idaho
+						Falls, ID 83401.</a></p>
+				<p><strong>Email: </strong><a href="mailto:thehistoricsheltoninn@gmail.com">thehistoricsheltoninn@gmail.com</a></p>
+				<p><strong>Phone: </strong><a href="tel:2085389605">(208) 538-9605</a></p>
+
+				<!-- google maps container-->
+				<div id="googleMap" style="width:100%;height:400px;"></div>
+				<p style="padding-bottom:2cm"></p>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="TheSheltonInn.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjU0s1ir9OGumQRwbXf0E5q_eS8Z24hGw&callback=myMap"></script>
+
+</body>
+
+</html>
