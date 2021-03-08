@@ -1,4 +1,5 @@
 // Map
+// Make sure the api is up to date in the future
 function myMap()
 {
   myCenter=new google.maps.LatLng(43.618539, -111.823526);
