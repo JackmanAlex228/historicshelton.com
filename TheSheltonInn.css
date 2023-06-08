@@ -184,8 +184,23 @@ body {font-family: Verdana,sans-serif;margin:0}
 }
 
 body {
-    font-family: Verdana,sans-serif;
-    margin: 0
+    font-family: 'Palatino', 'Georgia', serif;
+}
+
+.tagline {
+    font-family: 'Palatino', 'Georgia', serif;
+    font-style: oblique;
+    margin: 50px 0px 50px;
+    text-align: center;
+}
+
+.modern-font {
+    font-family: Verdana, sans-serif;
+    margin:0
+}
+
+.contact-non-underline {
+    text-decoration: none;
 }
 
 .mySlidesE {
@@ -302,7 +317,7 @@ body {
 }
 
 body {
-    font-family: Verdana,sans-serif;
+    font-family: 'Palatino', 'Georgia', serif;
     margin: 0
 }
 
