@@ -207,6 +207,13 @@ body {
     display: none
 }
 
+.slideshow-note {
+    color: #717171;
+    font-size: 13px;
+    margin: 0 0;
+    text-align: right;
+}
+
 /* Slideshow container */
 .slideshow-containerE {
     max-width: 1000px;
